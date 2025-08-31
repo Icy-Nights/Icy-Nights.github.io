@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power Widgets</title>
+    <link rel="stylesheet" href="power.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Power Widgets</h1>
+        <hr>
+    </header>
+
+    <div class="sidebar">
+        <p class="menuText"><u>MENU</u></p>
+        <ul class="menu">
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\index.html">ISS Tracker</a></li>
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\Solar Weather\solarWeather.html">Solar Weather</a></li>
+            <li><a class="menuOptions" href="power.html">Power Widgets</a></li>
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\Additional Widgets\addWidgets.html">Additional Widgets</a></li>
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\About\about.html">About/Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="ISS_Map">
+        <div class="container">
+            <h1>ISS Panels</h1>
+            <p>Calculates the expected power output for solar panels.</p>
+            <label>Enter Panel Area (square meters): </label>
+            <input id="panelArea"><br>
+            <label>Enter Efficiency (decimal): </label>
+            <input id="panelEfficiency"><br>
+            <label>Enter Solar Irradiance (Watts/m^2): </label>
+            <input id="panelIrradiance"><br><br>
+            <button id="calculatePowerButton">Submit</button><br>
+            <p id="powerResult"></p>
+        </div>
+    </div>
+
+    <div class="ISS_Numbers">
+        <div class="container">
+            <iframe src="https://www.falstad.com/circuit/" width="800" height="500"></iframe>
+        </div>
+        <div class="container">
+            <div id="inch-calculator-icw" data-ct="ohms_law" data-cw="100%" data-ch="550" data-cv="MTE3NTI3MDI4OTE="><div id="inch-calculator-icwh">Ohm’s Law Calculator</div><div id="inch-calculator-icwf"><a id="inch-calculator-icwi" href="https://www.inchcalculator.com/ohms-law-calculator/" target="_blank"><img id="inch-calculator-icwl" src="https://cdn.inchcalculator.com/e/inch-calculator-logo-tiny.png" alt="Inch Calculator Logo" width="40" height="49"><span id="inch-calculator-icwb">Inch Calculator</span></a></div></div><script src="https://cdn.inchcalculator.com/e/widgets.min.js" async defer></script>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <hr>
+        Author: PARTH RAVAL<br>
+        &copy; copyright reserved<br>
+    </footer>
+</body>
+</html>

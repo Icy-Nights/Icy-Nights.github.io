@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Additional Widgets</title>
+    <link rel="stylesheet" href="addWidgets.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Additional Widgets</h1>
+        <hr>
+    </header>
+
+    <div class="sidebar">
+        <p class="menuText"><u>MENU</u></p>
+        <ul class="menu">
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\index.html">ISS Tracker</a></li>
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\Solar Weather\solarWeather.html">Solar Weather</a></li>
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\ISS Power\power.html">Power Widgets</a></li>
+            <li><a class="menuOptions" href="addWidgets.html">Additional Widgets</a></li>
+            <li><a class="menuOptions" href="E:\Projects\Website\Website Course\ISS project\About\about.html">About/Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="ISS_Numbers">
+        <div class="container">
+            <h1>CSV Graph</h1>
+            <p>Allows user to import a CSV file and view the data in the form of a table.</p>
+
+            <!-- (PART A) LOAD CSV LIBRARY -->
+            <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+            <!-- (PART B) DEMO TABLE & BUTTON -->
+            <table id="demoB" class="demo"></table>
+            <input type="file" accept=".csv" id="picker" onchange="demoB()">
+        </div>
+        <div class="container">
+            <div id="av-skymap">
+                <script>
+                    var avSkymapProperties = {
+                        location: {
+                            lon:  -73.986,
+                            lat:  40.748,
+                            name: 'New York City',
+                            tz:   'America/New_York'
+                        },
+                        deco: 16399,
+                        size: 600,
+                        bgColor: '#ffffff',
+                        lang: 'en'
+                    };
+                </script>
+                <script src="https://astroviewer.net/widgets/widgets/skymap.js"></script>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ISS_Map">
+        <div class="container">
+            <h1>Global Map</h1>
+            <iframe src="https://satellitemap.space/" width="800px" height="480px" frameborder="0" title="Starlink Satellite Map"></iframe>
+        </div>
+    </div>
+
+    <script src="addWidgets.js"></script>
+
+    <footer class="footer">
+        <hr>
+        Author: PARTH RAVAL<br>
+        &copy; copyright reserved<br>
+    </footer>
+</body>
+</html>

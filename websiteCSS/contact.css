@@ -1,0 +1,30 @@
+.contactMe {
+    
+    background-image: url('https://i.pinimg.com/originals/27/0a/a9/270aa9c6ad9c9bbca3b4ae2844381fa5.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.contactMeText {
+    padding-left: 25px;
+}
+
+.contacts {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.contactList {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactListHeader {
+    text-decoration: underline;
+}

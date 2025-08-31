@@ -1,0 +1,32 @@
+.experiance {
+    
+    background-image: url('https://i.pinimg.com/originals/27/0a/a9/270aa9c6ad9c9bbca3b4ae2844381fa5.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.experianceText {
+    padding-left: 25px;
+}
+
+.expContainer {
+    display: grid;       /* container fits the content */
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #3498db;  /* border around both divs */
+
+}
+
+.resumeAndCVbox {
+    display: inline-block;       /* makes divs sit next to each other */
+    text-align: center;          /* center text inside */
+    line-height: 80px;           /* vertically center text (for single line) */
+    border-radius: 5px;          /* rounded corners for each div */
+    font-size: 18px;
+    border-radius: 20px;
+}

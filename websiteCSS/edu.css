@@ -1,0 +1,40 @@
+.education {
+    
+    background-image: url('https://i.pinimg.com/originals/27/0a/a9/270aa9c6ad9c9bbca3b4ae2844381fa5.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.educationText {
+    padding-left: 25px;
+}
+
+.schools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.schoolName {
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.schoolInfo {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}

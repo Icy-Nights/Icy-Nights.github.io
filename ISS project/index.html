@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISS Tracker Project ParthR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>International Space Station (ISS) Tracker || Parth R</h1>
+        <hr>
+    </header>
+
+    <div class="sidebar">
+        <p class="menuText"><u>MENU</u></p>
+        <ul class="menu">
+            <li><a class="menuOptions" href="index.html">ISS Tracker</a></li>
+            <li><a class="menuOptions" href="Solar Weather/solarWeather.html">Solar Weather</a></li>
+            <li><a class="menuOptions" href="ISS Power/power.html">Power Widgets</a></li>
+            <li><a class="menuOptions" href="Additional Widgets/addWidgets.html">Additional Widgets</a></li>
+            <li><a class="menuOptions" href="About/about.html">About/Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="ISS_Numbers">
+        <div class="container">
+            <h1>🛰️ ISS Live Location</h1>
+            <p>Latitude: <span id="lat">Loading...</span></p>
+            <p>Longitude: <span id="lon">Loading...</span></p>
+            <p>Solar Latitude: <span id="s_lat">Loading...</span></p>
+            <p>Solar Longitude: <span id="s_lon">Loading...</span></p>
+        </div>
+        <div class="container">
+            <h1>🛰️ ISS Statistics</h1>
+            <p>Time: <span id="time">Loading...</span></p>
+            <p>Orbital Velocity: <span id="speed">Loading...</span></p>
+            <p>Height: <span id="height">Loading...</span></p>
+            <p>Period: <span id="daylight">Loading...</span></p>
+        </div>
+    </div>
+    <div class="ISS_Graphs">
+        <div class="container">
+            <h1>ISS Orbital Velocity Graph</h1>
+            <canvas id="velocityChart" width="400" height="200"></canvas>
+        </div>
+        <div class="container">
+            <h1>ISS Altitude Graph</h1>
+            <canvas id="heightChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <div class="ISS_Map">
+        <div class="container">
+            <h1>ISS Calculator</h1>
+            <p>Calculates the distance in km between the latitude and<br>longitude points of the ISS and the input location using<br>the Haversine formula.</p>
+            <label>Enter Latitude (degrees): </label>
+            <input id="calculatePosition1"><br>
+            <label>Enter Longitude (degrees): </label>
+            <input id="calculatePosition2"><br><br>
+            <button id="calculatePositionButton">Submit</button><br>
+            <p id="distanceResult"></p>
+        </div>
+        <div class="container">
+            <h1>ISS Global Map</h1>
+            <div id="av-orbit">
+                <script>
+                    var avOrbitProperties = {
+                        lang: 'en'
+                    };
+                </script>
+                <script src="https://astroviewer.net/widgets/widgets/orbit.js"></script>
+            </div>
+        </div>
+        <div class="container">
+            <div id="av-passes">
+                <script>
+                    var avPassesProperties = {
+                        lon:   -121.441,
+                        lat:   49.380,
+                        name:  'Hope, B.C.',
+                        tz:    'America/Vancouver',
+                        lang:  'en',
+                        clock: '12h'
+                    };
+                </script>
+                <script src="https://astroviewer.net/widgets/widgets/passes.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <hr>
+        Author: PARTH RAVAL<br>
+        &copy; copyright reserved<br>
+    </footer>
+</body>
+</html>
